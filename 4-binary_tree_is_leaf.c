@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * binary_tree_is_leaf - Insert node at right of parent
+ * binary_tree_is_leaf - Checks if a node is a leaf node
  * @node: Node element
  * Return: Node address
  */
