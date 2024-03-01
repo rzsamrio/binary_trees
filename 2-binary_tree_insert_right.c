@@ -1,4 +1,5 @@
 #include "binary_trees.h"
+#include <stdlib.h>
 
 /**
  * binary_tree_insert_right - Insert node at right of parent
@@ -13,11 +14,9 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 
 	if (parent == NULL)
 		return (NULL);
-
 	node = binary_tree_node(parent, value);
 	if (node == NULL)
 		return (NULL);
-
 	if (parent->right != NULL)
 	{
 		node->right = parent->right;
@@ -26,6 +25,5 @@ binary_tree_t *binary_tree_insert_right(binary_tree_t *parent, int value)
 	}
 	else
 		node->parent->right = node;
-
 	return (node);
 }
